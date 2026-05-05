@@ -1,4 +1,4 @@
-import { createTypesenseClient } from "~/utils/typesenseClient";
+import { createTypesenseClient } from "#imports";
 
 export default defineNuxtPlugin(() => {
   return {

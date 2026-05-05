@@ -10,6 +10,8 @@ export function useSearch() {
       .search({
         q: query || '*',
         query_by: 'name, primaryCountry, locations, themes, styles',
+        group_by: 'productId',
+        group_limit: 1,     
         per_page: 20,
         ...options,
       })
